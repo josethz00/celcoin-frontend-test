@@ -1,0 +1,15 @@
+.headerIcons {
+  color: #e1e1e6;
+  font-size: 40px;
+  transition: all 0.3s ease-out;
+  margin: 0px 0px 0px 15px;
+}
+
+.headerIcons:last-child {
+  margin-right: 0;
+}
+
+.headerIcons:hover {
+  color: #fff;
+  font-size: 48px;
+}

@@ -1,4 +1,3 @@
-export * from './controllers/home.controller';
 export * from './controllers/assets-table.controller';
 export * from './controllers/register-new-asset.controller';
 export * from './coingecko/coin.type';

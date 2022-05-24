@@ -97,8 +97,8 @@ export default function Homepage(): JSX.Element {
             zIndex={isTooltipVisible['2'] ? 1 : 0}
             className={styles.hoverTooltip}
           >
-            <Text>Pacientes totais</Text>
-            <Text>268</Text>
+            <Text>Testes totais</Text>
+            <Text>1.265</Text>
           </Box>
           <Box className={styles.genInfoCardContainer}>
             <Flex
@@ -144,8 +144,8 @@ export default function Homepage(): JSX.Element {
             zIndex={isTooltipVisible['3'] ? 1 : 0}
             className={styles.hoverTooltip}
           >
-            <Text>Pacientes totais</Text>
-            <Text>268</Text>
+            <Text>Testes totais concluídos</Text>
+            <Text>10.550</Text>
           </Box>
           <Box className={styles.genInfoCardContainer}>
             <Flex
@@ -195,8 +195,14 @@ export default function Homepage(): JSX.Element {
             zIndex={isTooltipVisible['4'] ? 1 : 0}
             className={styles.hoverTooltip}
           >
-            <Text>Pacientes totais</Text>
-            <Text>268</Text>
+            <Text>Testes totais cancelados</Text>
+            <Text
+              style={{
+                color: '#EF0C35',
+              }}
+            >
+              618
+            </Text>
           </Box>
           <Box className={styles.genInfoCardContainer}>
             <Flex

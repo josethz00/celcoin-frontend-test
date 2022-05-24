@@ -1,0 +1,208 @@
+.genInfoCard {
+  width: 368px;
+  height: 176px;
+  position: relative;
+  margin-right: 16px;
+}
+
+.genInfoCard:before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 16px;
+  width: 80%;
+  height: 172px;
+  border-radius: 6px;
+  background-color: #FFF;
+  box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
+}
+
+.genInfoCard:last-child {
+  margin-right: 0;
+}
+
+.genInfoCardContainer {
+  position: relative;
+  border-radius: 6px;
+  background-color: #FFF;
+  height: 100%;
+  padding: 16px 0px 0px 0px;
+  box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
+  transition: .5s ease-in-out;
+}
+
+.genInfoCardContainer:hover {
+  box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.16);
+}
+
+.genInfoCardContent {
+  margin-left: 16px;
+  margin-top: 20px;
+}
+
+.genInfoCardContent > p {
+  color: #303B5B;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.genInfoCardContent > p:last-child {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.cardPercentageText {
+  color: #fff;
+  padding-top: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 20px;
+}
+
+.cardAltIcon {
+  position: absolute;
+  top: -1px;
+  left: 3px;
+  font-size: 11px;
+}
+
+.attendancesContainer {
+  width: calc(75% + 48px);
+  padding: 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
+  border-radius: 6px;
+  transition: .5s ease-in-out;
+}
+
+.attendancesContainer:hover {
+  box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
+}
+
+.attendanceCard {
+  box-sizing: border-box;
+  width: 25%;
+  height: 298px;
+  border: 1px solid #EDF1F8;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.attendanceCard:last-child {
+  margin-right: 0px;
+}
+
+.mostCommonTestCard {
+  width: 25%;
+  height: 330px;
+  border-radius: 6px;
+  margin-left: 16px;
+  background: linear-gradient(42.45deg, #FFFFFF 13.8%, rgba(255, 255, 255, 0) 93.21%), url(../../assets/images/rect.jpg);
+  transition: 0.2s ease-in-out;
+}
+
+.mostCommonTestCard:hover {
+  border-left: 0.5px solid #EB00FF;
+  border-top: 0.5px solid #FF002E;
+  box-shadow: 0px 1px 26px rgba(71, 87, 122, 0.08);
+  filter: drop-shadow(0px 8px 26px rgba(71, 87, 122, 0.3));
+}
+
+.attendanceCardImgContainer {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 136px;
+  background: url(../../assets/images/rect_105.png);
+  border-radius: 6px 6px 0px 0px;
+}
+
+.attendanceCardContent {
+  padding-left: 16px;
+}
+
+.updatesCard {
+  width: 33.3%;
+  margin-right: 16px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 26px rgba(71, 87, 122, 0.08);
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.updatesCard:last-child {
+  margin-right: 0px;
+}
+
+.updatesCardImgContainer {
+  background-color: #EFF2F9;
+  border-radius: 6px;
+  width: 110px;
+  height: 110px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.updatesCardContent > p:first-of-type {
+  color: rgba(48, 59, 91, 0.3);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.updatesCardContent > p:nth-of-type(2) {
+  color: #303B5B;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.updatesCardContent > p:nth-child(3) {
+  color: #1EAC79;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.updatesCardContent > p:last-of-type {
+  color: rgba(48, 59, 91, 0.3);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+}
+
+.hoverTooltip {
+  position: absolute;
+  right: 16px;
+  top: -48px;
+  height: 80px;
+  padding: 16px;
+  background: #FFF;
+  border-radius: 8px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: .5s ease-in-out;
+}
+
+.hoverTooltip > p:first-of-type {
+  color: #303B5B;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hoverTooltip > p:last-of-type {
+  color: #1CBF84;
+  font-size: 22px;
+  font-weight: 700;
+}

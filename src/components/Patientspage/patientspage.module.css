@@ -1,0 +1,107 @@
+
+.attendancesContainer {
+  width: 100%;
+  padding: 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
+  border-radius: 6px;
+  transition: .5s ease-in-out;
+  overflow-x: auto;
+}
+
+.attendancesContainer:hover {
+  box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
+}
+
+.attendanceCard {
+  box-sizing: border-box;
+  height: 298px;
+  width: calc(20% - 32px);
+  min-width: calc(20% - 32px);
+  border: 1px solid #EDF1F8;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.attendanceCard:last-child {
+  margin-right: 0px;
+}
+
+.attendanceCardImgContainer {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 136px;
+  background: url(../../assets/images/rect_105.png);
+  border-radius: 6px 6px 0px 0px;
+}
+
+.attendanceCardContent {
+  padding-left: 16px;
+}
+
+.updatesCard {
+  width: calc(100% - 16px - 16px);
+  border-radius: 6px;
+  border: 1px solid #EFF2F9;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0px 16px 8px 16px;
+  justify-content: space-between;
+}
+
+.updatesCard:last-child {
+  margin-bottom: 0px;
+}
+
+.updatesCardImgContainer {
+  background-color: #EFF2F9;
+  border-radius: 6px;
+  width: 78px;
+  height: 78px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.updatesCardContent > p:first-of-type {
+  color: #303B5B;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.updatesCardContent > p:nth-of-type(2) {
+  color: rgba(48, 59, 91, 0.3);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.updatesCardContent > p:last-of-type {
+  color: #1EAC79;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.editPatientInfo {
+  border: 1px solid #EFF2F9;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.editPatientInfo > svg {
+  font-size: 18px;
+  color: #145AD2;
+}
+
+.patientsListDots {
+  color: rgba(44, 46, 61, 0.5);
+  font-size: 22px;
+  cursor: pointer;
+}

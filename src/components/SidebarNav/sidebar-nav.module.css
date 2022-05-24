@@ -1,0 +1,32 @@
+.sidebarItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  height: 24px;
+  margin-bottom: 48px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sidebarItem:nth-child(1) {
+  margin-top: 40px;
+}
+
+.sidebarItemIcon {
+  font-size: 23px;
+  margin-right: 16.5px;
+}
+
+.logos {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}

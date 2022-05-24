@@ -1,22 +1,11 @@
-import AppContainer from '@/components/AppContainer';
-import AssetsList from '@/components/AssetsList';
-import NavBar from '@/components/NavBar';
-import RegisterNewAsset from '@/components/RegisterNewAsset';
+import Homepage from '@/components/Homepage';
 
 /**
  * Homepage
  * @returns {JSX.Element}
  */
 function Home(): JSX.Element {
-  return (
-    <>
-      <NavBar />
-      <AppContainer>
-        <RegisterNewAsset />
-        <AssetsList />
-      </AppContainer>
-    </>
-  );
+  return <Homepage />;
 }
 
 export default Home;

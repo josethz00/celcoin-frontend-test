@@ -1,16 +1,22 @@
 import { Theme as DefaultTheme, theme } from '@chakra-ui/react';
 
 const customTheme: DefaultTheme = {
-  ...theme,
+  ...({} as DefaultTheme),
+  config: {
+    useSystemColorMode: true,
+  },
   fonts: {
-    body: 'Roboto, system-ui, sans-serif',
-    heading: 'Roboto, system-ui, sans-serif',
+    body: 'Poppins, system-ui, sans-serif',
+    heading: 'Poppins, system-ui, sans-serif',
     mono: 'Menlo, monospace',
   },
   fontWeights: {
     ...theme.fontWeights,
+    thin: 100,
+    light: 200,
     normal: 400,
-    medium: 600,
+    medium: 500,
+    semibold: 600,
     bold: 700,
   },
   radii: {

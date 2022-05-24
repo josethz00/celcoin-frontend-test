@@ -1,0 +1,6 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/images/blue_bg.png), linear-gradient(107.65deg, #1042DD 0.43%, #24B0A8 100%);
+  background-size: cover;
+}

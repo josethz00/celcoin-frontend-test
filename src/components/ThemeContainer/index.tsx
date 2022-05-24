@@ -1,10 +1,7 @@
+import '@fontsource/poppins';
 import React from 'react';
 
-import {
-  ThemeProvider as ChakraThemeProvider,
-  ColorModeProvider,
-  CSSReset,
-} from '@chakra-ui/react';
+import { ChakraProvider, CSSReset } from '@chakra-ui/react';
 
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 import customTheme from '@/styles/custom.theme';
@@ -21,19 +18,12 @@ interface ThemeContainerProps {
  */
 function ThemeContainer({ children }: ThemeContainerProps): JSX.Element {
   return (
-    <ChakraThemeProvider theme={customTheme}>
-      <ColorModeProvider
-        value="dark"
-        options={{
-          initialColorMode: 'dark',
-        }}
-      >
-        <EmotionThemeProvider theme={customTheme}>
-          <CSSReset />
-          {children}
-        </EmotionThemeProvider>
-      </ColorModeProvider>
-    </ChakraThemeProvider>
+    <ChakraProvider theme={customTheme}>
+      <EmotionThemeProvider theme={customTheme}>
+        <CSSReset />
+        {children}
+      </EmotionThemeProvider>
+    </ChakraProvider>
   );
 }
 

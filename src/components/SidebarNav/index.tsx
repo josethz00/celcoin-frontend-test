@@ -10,7 +10,7 @@ import styles from './sidebar-nav.module.css';
  */
 export default function SidebarNav(): JSX.Element {
   return (
-    <Box width={248} marginTop={24} height="100%">
+    <Box width={248} marginTop={24} height="100%" marginRight={24}>
       <Flex
         alignItems="center"
         justifyContent="space-between"
@@ -43,7 +43,7 @@ export default function SidebarNav(): JSX.Element {
               icon="ant-design:home-outlined"
               className={styles.sidebarItemIcon}
             />
-            <Text>Home</Text>
+            <Text>Dashboard</Text>
           </ListItem>
         </Link>
         <Link href="/patients">

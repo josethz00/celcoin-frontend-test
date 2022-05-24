@@ -12,15 +12,21 @@ export default function ContentSection({
   return (
     <Box
       height="100%"
-      flexGrow={1}
       backgroundColor="#EFF2F9"
       borderRadius={30}
+      width={1592}
       filter="drop-shadow(0px 1px 30px rgba(0, 0, 0, 0.15))"
+      css={{
+        '@media screen and (min-width: 2500px)': {
+          width: 2100,
+        },
+      }}
     >
       <ContentNavbar />
       <Box
         height="calc(100% - 88px - 30px)"
         overflowY="auto"
+        width={1592}
         css={{
           '&::-webkit-scrollbar': {
             width: '7px',
@@ -31,6 +37,9 @@ export default function ContentSection({
           '&::-webkit-scrollbar-thumb': {
             background: '#ccc',
             borderRadius: '24px',
+          },
+          '@media screen and (min-width: 2500px)': {
+            width: 2100,
           },
         }}
       >

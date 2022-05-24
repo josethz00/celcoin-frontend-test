@@ -19,6 +19,7 @@ export default function AppContainer({
       marginLeft={40}
       marginRight={40}
       marginBottom={32}
+      justifyContent="center"
     >
       <SidebarNav />
 

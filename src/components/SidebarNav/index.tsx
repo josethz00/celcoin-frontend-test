@@ -2,6 +2,7 @@ import { Box, Divider, Flex, Text, List, ListItem } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styles from './sidebar-nav.module.css';
 
 /**
@@ -9,8 +10,10 @@ import styles from './sidebar-nav.module.css';
  * @returns {JSX.Element}
  */
 export default function SidebarNav(): JSX.Element {
+  const router = useRouter();
+
   return (
-    <Box width={248} marginTop={24} height="100%" marginRight={24}>
+    <Box width={248} marginTop={24} height="100%">
       <Flex
         alignItems="center"
         justifyContent="space-between"
@@ -38,7 +41,13 @@ export default function SidebarNav(): JSX.Element {
       />
       <List className={styles.sidebarItems}>
         <Link href="/">
-          <ListItem className={styles.sidebarItem}>
+          <ListItem
+            className={
+              router.pathname === '/'
+                ? `${styles.sidebarItem} ${styles.sidebarItemActive}`
+                : styles.sidebarItem
+            }
+          >
             <Icon
               icon="ant-design:home-outlined"
               className={styles.sidebarItemIcon}
@@ -47,7 +56,13 @@ export default function SidebarNav(): JSX.Element {
           </ListItem>
         </Link>
         <Link href="/patients">
-          <ListItem className={styles.sidebarItem}>
+          <ListItem
+            className={
+              router.pathname === '/patients'
+                ? `${styles.sidebarItem} ${styles.sidebarItemActive}`
+                : styles.sidebarItem
+            }
+          >
             <Icon
               icon="gridicons:product-downloadable"
               className={styles.sidebarItemIcon}
